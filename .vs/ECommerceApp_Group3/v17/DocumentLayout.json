@@ -1,18 +1,14 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\priya\\Group3_ECommerceApp\\",
+  "WorkspaceRootPath": "C:\\Users\\patel\\Group3_ECommerceApp\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{05E61456-F7D9-4625-B7D1-3DAD6AD293FA}|ECommerceApp.Tests\\ECommerceApp.Tests.csproj|c:\\users\\priya\\group3_ecommerceapp\\ecommerceapp.tests\\producttests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{05E61456-F7D9-4625-B7D1-3DAD6AD293FA}|ECommerceApp.Tests\\ECommerceApp.Tests.csproj|c:\\users\\patel\\group3_ecommerceapp\\ecommerceapp.tests\\producttests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{05E61456-F7D9-4625-B7D1-3DAD6AD293FA}|ECommerceApp.Tests\\ECommerceApp.Tests.csproj|solutionrelative:ecommerceapp.tests\\producttests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{00913EAD-FCA2-45DA-B5A8-30DF335A85E0}|ECommerceApp_Group3\\ECommerceApp_Group3.csproj|C:\\Users\\priya\\Group3_ECommerceApp\\ecommerceapp_group3\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{00913EAD-FCA2-45DA-B5A8-30DF335A85E0}|ECommerceApp_Group3\\ECommerceApp_Group3.csproj|C:\\Users\\patel\\Group3_ECommerceApp\\ecommerceapp_group3\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{00913EAD-FCA2-45DA-B5A8-30DF335A85E0}|ECommerceApp_Group3\\ECommerceApp_Group3.csproj|solutionrelative:ecommerceapp_group3\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{00913EAD-FCA2-45DA-B5A8-30DF335A85E0}|ECommerceApp_Group3\\ECommerceApp_Group3.csproj|C:\\Users\\priya\\Group3_ECommerceApp\\ecommerceapp_group3\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{00913EAD-FCA2-45DA-B5A8-30DF335A85E0}|ECommerceApp_Group3\\ECommerceApp_Group3.csproj|solutionrelative:ecommerceapp_group3\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -28,11 +24,11 @@
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "ProductTests.cs",
-              "DocumentMoniker": "C:\\Users\\priya\\Group3_ECommerceApp\\ECommerceApp.Tests\\ProductTests.cs",
+              "DocumentMoniker": "C:\\Users\\patel\\Group3_ECommerceApp\\ECommerceApp.Tests\\ProductTests.cs",
               "RelativeDocumentMoniker": "ECommerceApp.Tests\\ProductTests.cs",
-              "ToolTip": "C:\\Users\\priya\\Group3_ECommerceApp\\ECommerceApp.Tests\\ProductTests.cs",
+              "ToolTip": "C:\\Users\\patel\\Group3_ECommerceApp\\ECommerceApp.Tests\\ProductTests.cs",
               "RelativeToolTip": "ECommerceApp.Tests\\ProductTests.cs",
-              "ViewState": "AgIAAM4AAAAAAAAAAAAIwPQAAAAJAAAAAAAAAA==",
+              "ViewState": "AgIAAGwBAAAAAAAAAAAAAGgBAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-02-03T16:36:37.526Z",
               "EditorCaption": ""
@@ -41,25 +37,13 @@
               "$type": "Document",
               "DocumentIndex": 1,
               "Title": "Product.cs",
-              "DocumentMoniker": "C:\\Users\\priya\\Group3_ECommerceApp\\ECommerceApp_Group3\\Product.cs",
+              "DocumentMoniker": "C:\\Users\\patel\\Group3_ECommerceApp\\ECommerceApp_Group3\\Product.cs",
               "RelativeDocumentMoniker": "ECommerceApp_Group3\\Product.cs",
-              "ToolTip": "C:\\Users\\priya\\Group3_ECommerceApp\\ECommerceApp_Group3\\Product.cs",
+              "ToolTip": "C:\\Users\\patel\\Group3_ECommerceApp\\ECommerceApp_Group3\\Product.cs",
               "RelativeToolTip": "ECommerceApp_Group3\\Product.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAFAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-02-03T16:33:50.442Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\priya\\Group3_ECommerceApp\\ECommerceApp_Group3\\Program.cs",
-              "RelativeDocumentMoniker": "ECommerceApp_Group3\\Program.cs",
-              "ToolTip": "C:\\Users\\priya\\Group3_ECommerceApp\\ECommerceApp_Group3\\Program.cs",
-              "RelativeToolTip": "ECommerceApp_Group3\\Program.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-03T16:33:06.595Z"
             }
           ]
         }

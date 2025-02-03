@@ -243,5 +243,122 @@ namespace ECommerceApp.Tests
             string actual = Product.ValidDecreaseStock(currentStock, decreaseAmount);
             Assert.That(expected, Is.EqualTo(actual));
         }
+
+        /// <summary>
+        /// This test is testing the ValidProductId method with another valid product ID within the acceptable range.
+        /// This test ensures that the method correctly identifies a valid product ID between the minimum (8) and maximum (80000) limits.
+        /// 
+        /// I chose this test to verify that the method works as expected for another typical valid input. 
+        /// This is important test because it ensures that the application consistently accepts valid product IDs within the specified range.
+        /// </summary>
+        [Test]
+        public void ValidProductId_AnotherValidInput_ReturnsValid()
+        {
+            int validID = 2345;
+            Product product = new Product(validID, "Watch", 1000.29, 600);
+
+            string expected = "The Product Id is valid.";
+            string actual = Product.ValidProductId(validID);
+
+            Assert.That(expected, Is.EqualTo(actual));
+        }
+
+        /// <summary>
+        /// This test is testing the ValidProductName method with a valid product name containing only letters.
+        /// This test ensures that the method correctly identifies a valid product name that meets the formatting requirements (letters, digits, and spaces only).
+        /// 
+        /// I chose this test to verify that the method works as expected for a typical valid input. 
+        /// This is important because valid product names are a critical part of the application, and the system must ensure that they are accepted when they meet the required format.
+        /// </summary>
+        [Test]
+        public void ValidProductName_ValidInput_ReturnsValid()
+        {
+            string prodName = "Phone";
+            Product product = new Product(1223, prodName, 1200.39, 800);
+
+            string expected = "The Product Name is valid.";
+            string actual = Product.ValidProductName(prodName);
+
+            Assert.That(expected, Is.EqualTo(actual));
+        }
+
+        /// <summary>
+        /// This test is testing the ValidItemPrice method with an invalid item price below the minimum allowed value.
+        /// This test ensures that the method correctly identifies an invalid item price that is less than the minimum limit of $8.
+        /// 
+        /// I chose this test to verify that the method handles invalid input correctly. 
+        /// This is important test because the application must prevent users from entering prices that are too low, 
+        /// ensuring that only valid prices within the specified range are accepted.
+        /// </summary>
+        [Test]
+        public void ValidItemPrice_InvalidInputBelowMinimum_ReturnsInvalid()
+        {
+            double itemPrice = 3.99;
+            Product product = new Product(478, "Monitor", itemPrice, 200);
+
+            string expected = "The Item Price is not valid.";
+            string actual = Product.ValidItemPrice(itemPrice);
+
+            Assert.That(expected, Is.EqualTo(actual));
+        }
+
+        /// <summary>
+        /// This test is testing the ValidIncreaseStock method with an invalid increase amount that exceeds the maximum stock limit.
+        /// This test ensures that the method correctly identifies an invalid increase amount that would cause the stock to exceed the maximum limit of 800000.
+        /// 
+        /// I chose this test to verify that the method handles invalid input correctly. 
+        /// This is important test because the application must prevent users from increasing stock beyond the maximum allowed limit, 
+        /// ensuring that stock levels remain within the specified range.
+        /// </summary>
+        [Test]
+        public void increaseStoValidIncreaseStock_InvalidInputExceedsMaximum_ReturnsInvalidckTestCase2()
+        {
+            int currentStock = 6660;
+            int increaseAmount = 1000000;
+
+            string expected = "Stock amount exceeds maximum stock limit.";
+            string actual = Product.ValidIncreaseStock(currentStock, increaseAmount);
+            Assert.That(expected, Is.EqualTo(actual));
+        }
+
+        /// <summary>
+        /// This test is testing the ValidDecreaseStock method with an invalid decrease amount that would cause the stock to fall below the minimum limit.
+        /// This test ensures that the method correctly identifies an invalid decrease amount that would result in stock levels below the minimum limit of 8.
+        /// 
+        /// I chose this test to verify that the method handles invalid input correctly. 
+        /// This is important test because the application must prevent users from decreasing stock below the minimum allowed limit, 
+        /// ensuring that stock levels remain within the specified range.
+        /// </summary>
+        [Test]
+        public void ValidDecreaseStock_InvalidInputBelowMinimum_ReturnsInvalid()
+        {
+            int currentStock = 100;
+            int decreaseAmount = 110;
+
+            string expected = "Stock amount falls below minimum stock limit.";
+            string actual = Product.ValidDecreaseStock(currentStock, decreaseAmount);
+            Assert.That(expected, Is.EqualTo(actual));
+        }
+
+        /// <summary>
+        /// This test is testing the ValidStock method with an invalid stock amount below the minimum allowed value.
+        /// This test ensures that the method correctly identifies an invalid stock amount that is below the minimum limit which is 8.
+        /// 
+        /// I chose this test to verify that the method handles invalid input correctly. 
+        /// This is important test because the application must prevent users from entering stock amounts that are too low, 
+        /// ensuring that only valid stock amounts within the specified range are accepted.
+        /// </summary>
+        [Test]
+        public void ValidStock_InvalidInputBelowMinimum_ReturnsInvalid()
+        {
+            int stockAmount = 3;
+            Product product = new Product(7234, "Sony Playstation", 750.99, stockAmount);
+
+            string expected = "The Stock Amount is not valid.";
+            string actual = Product.ValidStock(stockAmount);
+
+            Assert.That(expected, Is.EqualTo(actual));
+        }
     }
 }
+
